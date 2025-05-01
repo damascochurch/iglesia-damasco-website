@@ -1,0 +1,10 @@
+# Staging Environment - Prevent Search Engine Indexing
+User-agent: *
+Disallow: /
+
+# Allow specific paths for testing
+Allow: /test-content
+Allow: /api/health
+
+# Sitemap
+Sitemap: https://staging.iglesiadamasco.com/sitemap.xml 
