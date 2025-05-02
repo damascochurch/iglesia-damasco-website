@@ -150,7 +150,7 @@ export default function SobreNosotros() {
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/20 rounded-lg"></div>
               <div className="relative rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/OldDamasco1.png"
+                  src="/OldDamaco1.jpg"
                   alt="Nuestra Historia"
                   width={800}
                   height={600}
@@ -304,7 +304,7 @@ export default function SobreNosotros() {
                 {/* Single Image */}
                 <div className="relative h-full min-h-[400px] lg:min-h-0">
                   <Image
-                    src="/Pastores.png"
+                    src="/Pastores.JPG"
                     alt="Pastores Omar y Nelly Rendón"
                     fill
                     className="object-cover object-center"

@@ -135,7 +135,7 @@ export default function MinisteriosPage() {
               >
                 <div className="relative h-48">
                   <Image
-                    src={ministerio.image || "/placeholder.svg"}
+                    src={ministerio.image || "/damasco-logo.png"}
                     alt={ministerio.title}
                     fill
                     className="object-cover"
@@ -174,10 +174,7 @@ export default function MinisteriosPage() {
               >
                 <div className="relative h-48">
                   <Image
-                    src={
-                      ministerio.image ||
-                      `/placeholder.svg?height=200&width=400&query=${encodeURIComponent(ministerio.title) || "/placeholder.svg"}`
-                    }
+                    src={ministerio.image || "/damasco-logo.png"}
                     alt={ministerio.title}
                     fill
                     className="object-cover"

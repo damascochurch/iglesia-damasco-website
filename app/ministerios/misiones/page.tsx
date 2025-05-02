@@ -79,7 +79,7 @@ export default function MinisterioMisionesPage() {
               <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className="relative h-full min-h-[300px]">
                   <Image
-                    src="/mission-trip-dominican.png"
+                    src="/mission.JPG"
                     alt="Misión en República Dominicana"
                     fill
                     className="object-cover"
