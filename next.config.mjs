@@ -6,9 +6,19 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  output: 'export',
   images: {
     unoptimized: true,
-    domains: ['iglesiadamasco.com', 'staging.iglesiadamasco.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'iglesiadamasco.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'staging.iglesiadamasco.com',
+      },
+    ],
   },
   env: {
     NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
