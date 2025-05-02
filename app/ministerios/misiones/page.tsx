@@ -10,7 +10,7 @@ export default function MinisterioMisionesPage() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-gradient-to-r from-blue-800 to-indigo-900 text-white">
         <div className="absolute inset-0 z-0">
-          <Image src="/mission.JPG" alt="Ministerio de Misiones" fill className="object-cover opacity-30" />
+          <Image src="/ministerios/misiones/minimission.png" alt="Ministerio de Misiones" fill className="object-cover opacity-30" />
           <div className="absolute inset-0 bg-gradient-to-r from-blue-800/80 to-indigo-900/80" />
         </div>
 
@@ -79,7 +79,7 @@ export default function MinisterioMisionesPage() {
               <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className="relative h-full min-h-[300px]">
                   <Image
-                    src="/mission.JPG"
+                    src="/ministerios/misiones/minimission.png"
                     alt="Misión en República Dominicana"
                     fill
                     className="object-cover"

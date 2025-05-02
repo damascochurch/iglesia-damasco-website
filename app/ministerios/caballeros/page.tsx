@@ -11,7 +11,7 @@ export default function MinisterioCaballerosPage() {
         <div className="absolute inset-0 z-0">
           {/* Use a placeholder image until the actual image is available */}
           <Image
-            src="/mens-ministry-gathering.png"
+            src="/ministerios/caballeros/Caballeros1.JPG"
             alt="Ministerio de Caballeros"
             fill
             className="object-cover opacity-30"
