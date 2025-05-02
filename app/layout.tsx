@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Iglesia de Dios Pentecostal Damasco",
   description: "Iglesia de Dios Pentecostal Damasco - Sirviendo a la comunidad con fe y amor",
   icons: {
-    icon: "/images/favicon.png",
+    shortcut: "/icon.png"
   }
 }
 
