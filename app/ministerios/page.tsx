@@ -39,7 +39,7 @@ export default function MinisteriosPage() {
       id: 5,
       title: "Ministerio de Misiones",
       description: "Llevando el evangelio a todas las naciones",
-      image: "/ministerios/misiones/mission-trip-dominican.png",
+      image: "/ministerios/misiones/mission.jpg",
       link: "/ministerios/misiones",
     },
   ]
