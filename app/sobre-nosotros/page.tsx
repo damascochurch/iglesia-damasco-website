@@ -100,7 +100,7 @@ export default function SobreNosotros() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-gray-900 text-white">
         <div className="absolute inset-0 z-0">
-          <Image src="/sobre-nosotros/sob-nos-hero.jpg" alt="Sobre Nosotros" fill className="object-cover opacity-30" />
+          <Image src="/sobre-nosotros/sob-nos-hero.jpg" alt="Sobre Nosotros" fill className="object-cover opacity-30" priority />
           <div className="absolute inset-0 bg-gradient-to-b from-gray-900/70 to-gray-900/90" />
         </div>
 
@@ -155,6 +155,7 @@ export default function SobreNosotros() {
                   width={800}
                   height={600}
                   className="w-full h-auto"
+                  priority
                 />
               </div>
             </div>
@@ -306,8 +307,10 @@ export default function SobreNosotros() {
                   <Image
                     src="/sobre-nosotros/Pastores.png"
                     alt="Pastores Omar y Nelly Rendón"
-                    fill
-                    className="object-cover object-center"
+                    width={800}
+                    height={600}
+                    className="w-full h-auto"
+                    priority
                   />
                 </div>
 
