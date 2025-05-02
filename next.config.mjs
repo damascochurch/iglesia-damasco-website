@@ -15,10 +15,11 @@ const nextConfig = {
     NEXT_PUBLIC_WORDPRESS_API_URL: process.env.NEXT_PUBLIC_WORDPRESS_API_URL || 'https://iglesiadamasco.com/graphql',
   },
   async rewrites() {
+    const wpApiUrl = process.env.NEXT_PUBLIC_WORDPRESS_API_URL || 'https://iglesiadamasco.com/graphql'
     return [
       {
         source: '/graphql',
-        destination: process.env.NEXT_PUBLIC_WORDPRESS_API_URL,
+        destination: wpApiUrl,
       },
     ]
   },
