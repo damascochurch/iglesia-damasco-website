@@ -304,7 +304,7 @@ export default function SobreNosotros() {
                 {/* Single Image */}
                 <div className="relative h-full min-h-[400px] lg:min-h-0">
                   <Image
-                    src="/Pastores.JPG"
+                    src="/sobre-nosotros/Pastores.png"
                     alt="Pastores Omar y Nelly Rendón"
                     fill
                     className="object-cover object-center"
