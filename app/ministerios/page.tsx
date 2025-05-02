@@ -18,7 +18,7 @@ export default function MinisteriosPage() {
       id: 2,
       title: "Ministerio de Jóvenes",
       description: "Guiando a los jóvenes a vivir una fe auténtica",
-      image: "/miniyouth.png",
+      image: "/miniyouth.jpg",
       link: "/ministerios/jovenes",
     },
     {
@@ -32,14 +32,14 @@ export default function MinisteriosPage() {
       id: 4,
       title: "Ministerio de Caballeros",
       description: "Formando hombres de fe, comprometidos con Dios y la familia",
-      image: "/mimimen.png",
+      image: "/mimimen.jpg",
       link: "/ministerios/caballeros",
     },
     {
       id: 5,
       title: "Ministerio de Misiones",
       description: "Llevando el evangelio a todas las naciones",
-      image: "/minimission.png",
+      image: "/minimission.jpg",
       link: "/ministerios/misiones",
     },
   ]
@@ -50,7 +50,7 @@ export default function MinisteriosPage() {
       id: 6,
       title: "Ministerio de Pantomima - Cristo Vive",
       description: "Comunicando el evangelio a través del arte de la pantomima",
-      image: "/minicv.png",
+      image: "/minicv.jpg",
       externalLink:
         "https://linktr.ee/cristoviveee?utm_source=linktree_profile_share&ltsid=8fa402bd-043d-43c3-8b18-0140b484617e",
     },
@@ -58,7 +58,7 @@ export default function MinisteriosPage() {
       id: 7,
       title: "Ministerio de Alabanza - COGD",
       description: "Adorando a Dios a través de la música y el canto",
-      image: "/minicogd.png",
+      image: "/minicogd.jpg",
       externalLink: "https://www.instagram.com/cogdministry/",
     },
     {
@@ -71,25 +71,25 @@ export default function MinisteriosPage() {
       id: 9,
       title: "Ministerio de Escuela Bíblica",
       description: "Profundizando en el conocimiento de las Escrituras",
-      image: "/miniescuela.png",
+      image: "/miniescuela.jpg",
     },
     {
       id: 10,
       title: "Ministerio de Ujieres",
       description: "Sirviendo y asistiendo a la congregación durante los servicios",
-      image: "/miniuji.png",
+      image: "/miniuji.jpg",
     },
     {
       id: 11,
       title: "Ministerio de Células",
       description: "Grupos pequeños para comunión y crecimiento espiritual",
-      image: "/minicelu.png",
+      image: "/minicelu.jpg",
     },
     {
       id: 12,
       title: "Ministerio de Multimedia y Sonido",
       description: "Apoyando los servicios con tecnología audiovisual",
-      image: "/minimulti.png",
+      image: "/minimulti.jpg",
     },
     {
       id: 13,
