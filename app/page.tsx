@@ -17,14 +17,14 @@ export default function HomePage() {
 
   const slides = [
     {
-      image: "/worship-cross.jpeg",
+      image: "/worship/worship-cross.jpeg",
       title: "Bienvenidos a Damasco",
       subtitle: "Un lugar donde encontrarás amor, comunidad y propósito en Cristo",
       buttonText: "Conócenos",
       buttonLink: "/sobre-nosotros",
     },
     {
-      image: "/worship-hands.jpeg",
+      image: "/worship/worship-hands.jpeg",
       title: "Adoración Vibrante",
       subtitle: "Experimenta la presencia de Dios a través de la adoración",
       buttonText: "Horarios de Servicio",
@@ -410,7 +410,7 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="py-20 bg-gray-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image src="/worship-hands-raised.jpeg" alt="Únete a Nosotros" fill className="object-cover opacity-20" />
+          <Image src="/worship/worship-hands-raised.jpeg" alt="Únete a Nosotros" fill className="object-cover opacity-20" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
