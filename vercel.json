@@ -1,22 +1,7 @@
 {
-  "version": 2,
   "framework": "nextjs",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ],
+  "buildCommand": "pnpm build",
+  "installCommand": "pnpm install",
   "env": {
     "NEXT_PUBLIC_WORDPRESS_API_URL": "https://iglesiadamasco.com/graphql",
     "NEXT_PUBLIC_SITE_URL": "https://iglesiadamasco.com"
