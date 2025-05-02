@@ -100,7 +100,7 @@ export default function SobreNosotros() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-gray-900 text-white">
         <div className="absolute inset-0 z-0">
-          <Image src="/sob-nos-hero.jpg" alt="Sobre Nosotros" fill className="object-cover opacity-30" />
+          <Image src="/sobre-nosotros/sob-nos-hero.jpg" alt="Sobre Nosotros" fill className="object-cover opacity-30" />
           <div className="absolute inset-0 bg-gradient-to-b from-gray-900/70 to-gray-900/90" />
         </div>
 
@@ -150,7 +150,7 @@ export default function SobreNosotros() {
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/20 rounded-lg"></div>
               <div className="relative rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/OldDamaco1.jpg"
+                  src="/sobre-nosotros/OldDamasco1.png"
                   alt="Nuestra Historia"
                   width={800}
                   height={600}
