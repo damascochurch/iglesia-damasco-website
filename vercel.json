@@ -1,9 +1,5 @@
 {
   "framework": "nextjs",
   "buildCommand": "pnpm build",
-  "installCommand": "pnpm install",
-  "env": {
-    "NEXT_PUBLIC_WORDPRESS_API_URL": "https://iglesiadamasco.com/graphql",
-    "NEXT_PUBLIC_SITE_URL": "https://iglesiadamasco.com"
-  }
+  "installCommand": "pnpm install"
 } 
