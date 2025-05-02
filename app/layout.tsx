@@ -12,10 +12,7 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfa
 
 export const metadata: Metadata = {
   title: "Iglesia de Dios Pentecostal Damasco",
-  description: "Iglesia de Dios Pentecostal Damasco - Sirviendo a la comunidad con fe y amor",
-  icons: {
-    shortcut: "/icon.png"
-  }
+  description: "Iglesia de Dios Pentecostal Damasco - Sirviendo a la comunidad con fe y amor"
 }
 
 export default function RootLayout({
@@ -25,7 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" suppressHydrationWarning>
-      <head />
+      <head>
+        <link rel="icon" type="image/png" href="/icon.png" />
+      </head>
       <body className={`${inter.variable} ${cinzel.variable} ${playfair.variable} font-sans`}>
         <ThemeProvider
           attribute="class"
