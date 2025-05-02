@@ -139,6 +139,8 @@ export default function MinisteriosPage() {
                     alt={ministerio.title}
                     fill
                     className="object-cover"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <CardContent className="p-6">
@@ -178,6 +180,8 @@ export default function MinisteriosPage() {
                     alt={ministerio.title}
                     fill
                     className="object-cover"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <CardContent className="p-6">

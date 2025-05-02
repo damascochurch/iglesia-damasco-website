@@ -6,30 +6,21 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  output: 'export',
+  output: 'standalone',
   images: {
+    loader: 'custom',
+    loaderFile: './app/image-loader.js',
     unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'iglesiadamasco.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'staging.iglesiadamasco.com',
-      },
-    ],
   },
   env: {
     NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
     NEXT_PUBLIC_WORDPRESS_API_URL: process.env.NEXT_PUBLIC_WORDPRESS_API_URL || 'https://iglesiadamasco.com/graphql',
   },
   async rewrites() {
-    const wpApiUrl = process.env.NEXT_PUBLIC_WORDPRESS_API_URL || 'https://iglesiadamasco.com/graphql'
     return [
       {
         source: '/graphql',
-        destination: wpApiUrl,
+        destination: 'https://iglesiadamasco.com/graphql',
       },
     ]
   },
