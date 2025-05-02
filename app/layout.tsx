@@ -12,7 +12,8 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfa
 
 export const metadata: Metadata = {
   title: "Iglesia de Dios Pentecostal Damasco",
-  description: "Iglesia de Dios Pentecostal Damasco - Sirviendo a la comunidad con fe y amor"
+  description: "Iglesia de Dios Pentecostal Damasco - Sirviendo a la comunidad con fe y amor",
+  icons: []
 }
 
 export default function RootLayout({
