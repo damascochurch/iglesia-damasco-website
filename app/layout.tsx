@@ -22,9 +22,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" suppressHydrationWarning>
-      <head>
-        <link rel="icon" type="image/png" href="/icon.png" />
-      </head>
       <body className={`${inter.variable} ${cinzel.variable} ${playfair.variable} font-sans`}>
         <ThemeProvider
           attribute="class"
