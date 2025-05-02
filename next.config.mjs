@@ -6,10 +6,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  output: 'standalone',
   images: {
-    loader: 'custom',
-    loaderFile: './app/image-loader.js',
     unoptimized: true,
   },
   env: {
@@ -17,12 +14,7 @@ const nextConfig = {
     NEXT_PUBLIC_WORDPRESS_API_URL: process.env.NEXT_PUBLIC_WORDPRESS_API_URL || 'https://iglesiadamasco.com/graphql',
   },
   async rewrites() {
-    return [
-      {
-        source: '/graphql',
-        destination: 'https://iglesiadamasco.com/graphql',
-      },
-    ]
+    return []
   },
   async headers() {
     return [
