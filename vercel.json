@@ -20,6 +20,5 @@
   "env": {
     "NEXT_PUBLIC_WORDPRESS_API_URL": "https://iglesiadamasco.com/graphql",
     "NEXT_PUBLIC_SITE_URL": "https://iglesiadamasco.com"
-  },
-  "comment": "Force new deployment"
+  }
 } 
