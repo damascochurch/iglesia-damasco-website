@@ -32,14 +32,14 @@ export default function MinisteriosPage() {
       id: 4,
       title: "Ministerio de Caballeros",
       description: "Formando hombres de fe, comprometidos con Dios y la familia",
-      image: "/Caballeros1.JPG",
+      image: "/caballeros1.jpg",
       link: "/ministerios/caballeros",
     },
     {
       id: 5,
       title: "Ministerio de Misiones",
       description: "Llevando el evangelio a todas las naciones",
-      image: "/mission.JPG",
+      image: "/minimission.jpg",
       link: "/ministerios/misiones",
     },
   ]
