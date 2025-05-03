@@ -20,7 +20,7 @@ export default function MinisterioNinosPage() {
             <div className="flex items-center gap-4 mb-6">
               <div className="bg-white p-2 rounded-full">
                 <Image
-                  src="/ministerios/ninos/minikids.png"
+                  src="/ministerios/ninos/kidslogo.png"
                   alt="Ministerio de Niños Logo"
                   width={70}
                   height={70}
@@ -267,7 +267,7 @@ export default function MinisterioNinosPage() {
                 <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-green-200 rounded-lg"></div>
                 <div className="relative rounded-lg overflow-hidden shadow-xl">
                   <Image
-                    src="/kids1.jpg"
+                    src="/ministerios/ninos/kids1.png"
                     alt="Niños aprendiendo de la Biblia"
                     width={600}
                     height={400}
