@@ -17,36 +17,36 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/favicon_io COG/favicon.ico",
+        url: "/favicon_io GOD NEW/favicon.ico",
         sizes: "any",
       },
       {
-        url: "/favicon_io COG/favicon-32x32.png",
+        url: "/favicon_io GOD NEW/favicon-32x32.png",
         type: "image/png",
         sizes: "32x32",
       },
       {
-        url: "/favicon_io COG/favicon-16x16.png",
+        url: "/favicon_io GOD NEW/favicon-16x16.png",
         type: "image/png",
         sizes: "16x16",
       },
     ],
     apple: {
-      url: "/favicon_io COG/apple-touch-icon.png",
+      url: "/favicon_io GOD NEW/apple-touch-icon.png",
       sizes: "180x180",
     },
     other: [
       {
         rel: "android-chrome-192x192",
-        url: "/favicon_io COG/android-chrome-192x192.png",
+        url: "/favicon_io GOD NEW/android-chrome-192x192.png",
       },
       {
         rel: "android-chrome-512x512",
-        url: "/favicon_io COG/android-chrome-512x512.png",
+        url: "/favicon_io GOD NEW/android-chrome-512x512.png",
       },
     ],
   },
-  manifest: "/favicon_io COG/site.webmanifest",
+  manifest: "/favicon_io GOD NEW/site.webmanifest",
   openGraph: {
     title: "Iglesia de Dios Pentecostal Damasco",
     description: "Una comunidad de fe, esperanza y amor en Cristo Jesús. Únete a nosotros en nuestra misión de servir y compartir el evangelio.",
