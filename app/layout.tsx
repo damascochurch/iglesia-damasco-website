@@ -32,14 +32,10 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="relative min-h-screen">
-            <div className="fixed top-0 left-0 right-0 z-50">
-              <Header />
-            </div>
-            <div className="pt-[72px]">
-              <PageTransition>
-                <main className="relative">{children}</main>
-              </PageTransition>
-            </div>
+            <Header />
+            <PageTransition>
+              <main className="relative">{children}</main>
+            </PageTransition>
             <Footer />
           </div>
           <Toaster />
