@@ -5,6 +5,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster"
+import { PageTransition } from "@/components/page-transition"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const cinzel = Cinzel({ subsets: ["latin"], variable: "--font-cinzel" })
@@ -31,7 +32,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <main>{children}</main>
+          <PageTransition>
+            <main>{children}</main>
+          </PageTransition>
           <Footer />
           <Toaster />
         </ThemeProvider>
