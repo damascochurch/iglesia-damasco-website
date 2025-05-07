@@ -31,14 +31,24 @@ export function Header() {
     <header
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300",
-        isScrolled ? "bg-white/95 shadow-md backdrop-blur-sm" : "bg-white/95 backdrop-blur-sm",
+        isScrolled ? "bg-white/95 shadow-md backdrop-blur-sm" : "bg-transparent",
       )}
     >
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <Link href="/" className="flex items-center">
-          <div className="flex flex-col text-gray-900">
+          <div
+            className={cn(
+              "flex flex-col transition-colors",
+              isScrolled ? "text-gray-900" : "text-white",
+            )}
+          >
             <span className="text-xs sm:text-sm font-medium">IGLESIA DE DIOS</span>
-            <span className="text-base sm:text-lg font-bold font-cinzel tracking-wider">
+            <span
+              className={cn(
+                "text-base sm:text-lg font-bold font-cinzel tracking-wider",
+                isScrolled ? "text-gray-900" : "text-white",
+              )}
+            >
               PENTECOSTAL DAMASCO
             </span>
           </div>
@@ -50,7 +60,10 @@ export function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className="font-medium text-gray-700 transition-colors hover:text-primary"
+              className={cn(
+                "font-medium transition-colors hover:text-primary",
+                isScrolled ? "text-gray-700" : "text-white",
+              )}
             >
               {item.name}
             </Link>
@@ -63,9 +76,9 @@ export function Header() {
             <Button 
               variant="ghost" 
               size="icon" 
-              className="lg:hidden p-2 hover:bg-gray-100"
+              className="lg:hidden p-2 hover:bg-white/10 active:bg-white/20"
             >
-              <Menu className="h-6 w-6 text-gray-900" />
+              <Menu className={cn("h-6 w-6", isScrolled ? "text-gray-900" : "text-white")} />
               <span className="sr-only">Toggle menu</span>
             </Button>
           </SheetTrigger>
@@ -73,9 +86,19 @@ export function Header() {
             <div className="flex flex-col h-full">
               <div className="flex items-center justify-between p-6 border-b">
                 <Link href="/" className="flex items-center">
-                  <div className="flex flex-col text-gray-900">
+                  <div
+                    className={cn(
+                      "flex flex-col transition-colors",
+                      isScrolled ? "text-gray-900" : "text-white",
+                    )}
+                  >
                     <span className="text-xs sm:text-sm font-medium">IGLESIA DE DIOS</span>
-                    <span className="text-base sm:text-lg font-bold font-cinzel tracking-wider">
+                    <span
+                      className={cn(
+                        "text-base sm:text-lg font-bold font-cinzel tracking-wider",
+                        isScrolled ? "text-gray-900" : "text-white",
+                      )}
+                    >
                       PENTECOSTAL DAMASCO
                     </span>
                   </div>
