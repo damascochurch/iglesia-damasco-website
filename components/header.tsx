@@ -7,8 +7,6 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu, Facebook, Youtube, Instagram } from "lucide-react"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
-import { LanguageSwitcher } from "@/components/language-switcher"
-import { MobileMenu } from "@/components/mobile-menu"
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -63,11 +61,6 @@ export function Header() {
             </span>
           </div>
         </Link>
-
-        <div className="flex items-center gap-4">
-          <LanguageSwitcher />
-          <MobileMenu />
-        </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-6">
