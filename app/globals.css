@@ -68,7 +68,7 @@
 
 /* Smooth transitions */
 main {
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.1s linear;
 }
 
 /* Prevent flash of unstyled content */
