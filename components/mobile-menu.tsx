@@ -44,6 +44,16 @@ export function MobileMenu() {
         className="w-[300px] p-0 bg-white/95 backdrop-blur-sm border-l border-gray-100"
       >
         <nav className="flex flex-col h-full">
+          <div className="flex items-center justify-between p-6 border-b">
+            <Link href="/" className="flex items-center">
+              <div className="flex flex-col">
+                <span className="text-sm font-medium text-gray-600">IGLESIA DE DIOS</span>
+                <span className="text-base font-bold font-cinzel tracking-wider text-gray-900">
+                  PENTECOSTAL DAMASCO
+                </span>
+              </div>
+            </Link>
+          </div>
           <div className="flex-1 py-8">
             <ul className="space-y-3 px-4">
               {menuItems.map((item, index) => (
