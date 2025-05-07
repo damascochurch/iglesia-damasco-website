@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu, Facebook, Youtube, Instagram } from "lucide-react"
 import { cn } from "@/lib/utils"
-import Image from "next/image"
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -36,14 +35,7 @@ export function Header() {
       )}
     >
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-          <Image
-            src="/logo.png"
-            alt="Iglesia Damasco"
-            width={40}
-            height={40}
-            className="rounded-full"
-          />
+        <Link href="/" className="flex items-center">
           <div
             className={cn(
               "flex flex-col transition-colors",
@@ -93,10 +85,20 @@ export function Header() {
           <SheetContent side="right" className="w-[85vw] sm:w-[350px] p-0">
             <div className="flex flex-col h-full">
               <div className="flex items-center justify-between p-6 border-b">
-                <Link href="/" className="flex items-center gap-2">
-                  <div className="flex flex-col">
-                    <span className="text-sm font-medium text-gray-600">IGLESIA DE DIOS</span>
-                    <span className="text-base font-bold font-cinzel tracking-wider text-gray-900">
+                <Link href="/" className="flex items-center">
+                  <div
+                    className={cn(
+                      "flex flex-col transition-colors",
+                      isScrolled ? "text-gray-900" : "text-white",
+                    )}
+                  >
+                    <span className="text-xs sm:text-sm font-medium">IGLESIA DE DIOS</span>
+                    <span
+                      className={cn(
+                        "text-base sm:text-lg font-bold font-cinzel tracking-wider",
+                        isScrolled ? "text-gray-900" : "text-white",
+                      )}
+                    >
                       PENTECOSTAL DAMASCO
                     </span>
                   </div>
