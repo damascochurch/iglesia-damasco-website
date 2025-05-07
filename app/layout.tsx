@@ -31,11 +31,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
-          <PageTransition>
-            <main>{children}</main>
-          </PageTransition>
-          <Footer />
+          <div className="relative min-h-screen">
+            <Header />
+            <PageTransition>
+              <main className="relative">{children}</main>
+            </PageTransition>
+            <Footer />
+          </div>
           <Toaster />
         </ThemeProvider>
       </body>
