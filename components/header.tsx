@@ -31,7 +31,7 @@ export function Header() {
     <header
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300",
-        isScrolled ? "bg-white/95 dark:bg-gray-900/95 shadow-md backdrop-blur-sm" : "bg-transparent",
+        isScrolled ? "bg-white/95 shadow-md backdrop-blur-sm" : "bg-transparent",
       )}
     >
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
@@ -39,14 +39,14 @@ export function Header() {
           <div
             className={cn(
               "flex flex-col transition-colors",
-              isScrolled ? "text-gray-900 dark:text-white" : "text-white",
+              isScrolled ? "text-gray-900" : "text-white",
             )}
           >
             <span className="text-sm font-medium">IGLESIA DE DIOS</span>
             <span
               className={cn(
                 "text-lg font-bold font-cinzel tracking-wider",
-                isScrolled ? "text-gray-900 dark:text-white" : "text-white",
+                isScrolled ? "text-gray-900" : "text-white",
               )}
             >
               PENTECOSTAL DAMASCO
@@ -62,7 +62,7 @@ export function Header() {
               href={item.href}
               className={cn(
                 "font-medium transition-colors hover:text-primary",
-                isScrolled ? "text-gray-700 dark:text-gray-200" : "text-white",
+                isScrolled ? "text-gray-700" : "text-white",
               )}
             >
               {item.name}
@@ -74,56 +74,48 @@ export function Header() {
         <Sheet>
           <SheetTrigger asChild>
             <Button variant="ghost" size="icon" className="lg:hidden">
-              <Menu className={cn("h-6 w-6", isScrolled ? "text-gray-900 dark:text-white" : "text-white")} />
+              <Menu className={cn("h-6 w-6", isScrolled ? "text-gray-900" : "text-white")} />
               <span className="sr-only">Toggle menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent className="w-[300px] sm:w-[350px]">
+          <SheetContent>
             <div className="flex flex-col h-full">
-              <div className="flex items-center justify-between pb-6 border-b">
-                <Link href="/" className="flex items-center gap-2">
-                  <div className="flex flex-col">
-                    <span className="text-xs font-medium">IGLESIA DE DIOS</span>
-                    <span className="text-sm font-bold font-cinzel tracking-wider text-gray-900">
-                      PENTECOSTAL DAMASCO
-                    </span>
-                  </div>
-                </Link>
+              <div className="flex-1 py-6">
+                <nav className="flex flex-col gap-4">
+                  {navItems.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      className="text-lg font-medium hover:text-primary"
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </nav>
               </div>
-              <nav className="flex flex-col gap-4 py-6">
-                {navItems.map((item) => (
+              <div className="border-t py-6">
+                <div className="flex justify-center gap-4">
                   <Link
-                    key={item.name}
-                    href={item.href}
-                    className="text-lg font-medium transition-colors hover:text-primary"
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-              </nav>
-              <div className="mt-auto pt-6 border-t">
-                <div className="flex items-center justify-center gap-4">
-                  <Link
-                    href="https://www.facebook.com/Iglesiadediospentecostaldamasco"
+                    href="https://www.facebook.com/iglesiadamasco"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"
+                    className="p-2 rounded-full hover:bg-gray-100"
                   >
                     <Facebook size={20} />
                   </Link>
                   <Link
-                    href="https://www.youtube.com/@damascochurch5364"
+                    href="https://www.youtube.com/@iglesiadamasco"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"
+                    className="p-2 rounded-full hover:bg-gray-100"
                   >
                     <Youtube size={20} />
                   </Link>
                   <Link
-                    href="https://www.instagram.com/iglesia.damasco/"
+                    href="https://www.instagram.com/iglesiadamasco"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"
+                    className="p-2 rounded-full hover:bg-gray-100"
                   >
                     <Instagram size={20} />
                   </Link>
