@@ -47,7 +47,7 @@ export function MobileMenu() {
           <div className="flex items-center justify-between p-6 border-b">
             <Link href="/" className="flex items-center">
               <div className="flex flex-col">
-                <span className="text-sm font-medium text-gray-600">IGLESIA DE DIOS</span>
+                <span className="text-sm font-medium text-primary">IGLESIA DE DIOS</span>
                 <span className="text-base font-bold font-cinzel tracking-wider text-gray-900">
                   PENTECOSTAL DAMASCO
                 </span>
