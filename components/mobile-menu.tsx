@@ -3,24 +3,30 @@
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import { Menu } from "lucide-react"
-import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
 import { cn } from "@/lib/utils"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 import { useState, useEffect } from "react"
+import { translations } from "@/lib/translations"
+import { useParams } from "next/navigation"
 
 const menuItems = [
-  { href: "/", label: "Inicio" },
-  { href: "/about", label: "Nosotros" },
-  { href: "/ministries", label: "Ministerios" },
-  { href: "/events", label: "Eventos" },
-  { href: "/contact", label: "Contacto" },
+  { href: "/", key: "home" },
+  { href: "/about", key: "about" },
+  { href: "/ministries", key: "ministries" },
+  { href: "/events", key: "events" },
+  { href: "/contact", key: "contact" },
 ]
 
 export function MobileMenu() {
   const pathname = usePathname()
   const router = useRouter()
+  const params = useParams()
   const [open, setOpen] = useState(false)
+  
+  // Get current language from URL or default to Spanish
+  const lang = (params?.lang as string) || "es"
+  const t = translations[lang as keyof typeof translations]
 
   // Close menu when pathname changes
   useEffect(() => {
@@ -29,7 +35,7 @@ export function MobileMenu() {
 
   const handleNavigation = (href: string) => {
     setOpen(false)
-    router.push(href)
+    router.push(`/${lang}${href}`)
   }
 
   return (
@@ -61,12 +67,12 @@ export function MobileMenu() {
                     onClick={() => handleNavigation(item.href)}
                     className={cn(
                       "w-full text-left block py-3.5 px-4 rounded-xl text-lg font-medium transition-all",
-                      pathname === item.href
+                      pathname === `/${lang}${item.href}`
                         ? "bg-primary/10 text-primary shadow-sm"
                         : "hover:bg-gray-50 active:scale-[0.98]"
                     )}
                   >
-                    {item.label}
+                    {t.nav[item.key as keyof typeof t.nav]}
                   </button>
                 </motion.li>
               ))}
@@ -77,7 +83,7 @@ export function MobileMenu() {
               onClick={() => handleNavigation("/donate")}
               className="w-full inline-flex items-center justify-center rounded-xl bg-primary px-6 py-3.5 text-base font-medium text-white shadow-sm hover:bg-primary/90 active:scale-[0.98] transition-all"
             >
-              Donar Ahora
+              {t.nav.donate}
             </button>
           </div>
         </nav>
